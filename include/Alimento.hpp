@@ -6,11 +6,10 @@ class Alimento
     public:
     Alimento(int Energia)
     {
-        this->Energia = Energia
+        this->Energia = Energia;
     }
     ~Alimento(){}
-    int ExtraerEnergia()
-    {
+    int ExtraerEnergia(){
         return Energia;
     }
 };

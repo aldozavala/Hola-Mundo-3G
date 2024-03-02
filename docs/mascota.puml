@@ -1,0 +1,31 @@
+@startuml mascota
+    
+    class Mascota 
+    class Alimento
+    class Jugar
+    class Salud
+    class Ejercicio 
+    class Higiene 
+    class Banio
+    class Dormir 
+    class Limpio
+    class Pasear 
+    class Saludmental
+    class Saludfisica
+
+    Mascota *--- Salud
+    Mascota *--Saludfisica
+    Mascota *-- Saludmental
+    Salud o-- Alimento 
+    Salud o-- Dormir
+    Higiene o-- Banio
+    Saludfisica *-- Ejercicio
+    Saludmental o-- Jugar
+    Saludmental o-- Pasear
+    Higiene -|> Saludfisica
+    Limpio *-- Higiene
+    Ejercicio -|> Jugar
+    Ejercicio -|> Pasear
+    Ejercicio -|> Salud
+
+@enduml

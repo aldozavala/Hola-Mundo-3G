@@ -1,10 +1,14 @@
 #include <iostream>
+#include<Dibujo.hpp>
 #include<Mascota.hpp>
 #include<Alimento.hpp>
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
+    Dibujo dibujo("./assets/popo.txt");
+    dibujo.Dibujar();
+
     Mascota m1;
     Mascota m2;
     Mascota m3;
